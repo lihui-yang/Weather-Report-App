@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Monaco;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+    font-family: sans-serif;
+    color:white;
+  }
+  
+  .header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+  }
+  
+  .general-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .status {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .location {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  
+  .detail-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .detail.bordered {
+    border-left: 0.5px solid #777;
+    border-right: 0.5px solid #777;
+  }
+  
+  .detail .title {
+    font-size: 1rem;
+    flex-grow: 1;
+    font-weight: bold;
+  }
+  
+  .detail .value {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+  .detail .unit{
+    font-size: 0.6rem;
+    margin-top: 5px;
+  }
+  
+  .city-search-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .city-search {
+    margin-top: 20px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+  }
